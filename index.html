@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>adriaan.company</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       /* Basics */
+      * {
+        box-sizing: border-box;
+      }
       body,
       html {
         margin: 0;
@@ -13,38 +16,16 @@
         height: 100%;
       }
       body {
-        background: #eef9ff;
+        background: #e8e9f5;
         word-break: break-word;
         display: flex;
         justify-content: center;
         color: #415659;
-        font-family: "Space Grotesk", Arial, sans-serif;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-weight: 400;
-      }
-      main {
-        margin: auto;
-      }
-      * {
-        box-sizing: border-box;
       }
 
       /* Fonts */
-      @font-face {
-        font-family: "Space Grotesk";
-        font-weight: 500;
-        src: url("https://assets.simpleanalytics.com/fonts/SpaceGrotesk-Medium.woff2")
-            format("woff2"),
-          url("https://assets.simpleanalytics.com/fonts/SpaceGrotesk-Medium.woff")
-            format("woff");
-      }
-      @font-face {
-        font-family: "Space Grotesk";
-        font-weight: 400;
-        src: url("https://assets.simpleanalytics.com/fonts/SpaceGrotesk-Regular.woff2")
-            format("woff2"),
-          url("https://assets.simpleanalytics.com/fonts/SpaceGrotesk-Regular.woff")
-            format("woff");
-      }
       h1,
       h2,
       h3,
@@ -57,7 +38,8 @@
         font-size: 1rem;
         line-height: 150%;
       }
-      textarea, input {
+      textarea,
+      input {
         border: 1px solid #232e2f;
         border-radius: 5px;
       }
@@ -73,39 +55,42 @@
         padding: 2rem;
         flex: 0 1 auto;
         text-align: center;
+        margin: auto;
       }
 
+      /* Logo */
+      svg {
+        margin-bottom: 1rem;
+        width: 70px;
+        height: 70px;
+      }
+
+      /* Dark mode */
       @media (prefers-color-scheme: dark) {
         body {
-          background: #2a3638;
+          background: #3a3f68;
         }
         textarea,
         input {
-          background: #232e2f;
+          background: #3a3f68;
         }
         body,
         a,
         textarea,
         input {
-          color: #a4bdc0;
+          color: #ecedf7;
         }
       }
     </style>
   </head>
   <body>
     <main>
-      <svg
-        width="70"
-        height="70"
-        viewBox="0 0 400 400"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        style="margin-bottom: 1rem"
-      >
-        <circle cx="200" cy="200" r="200" fill="#FF4F64" />
-        <path d="M132.414 201.448H100V298.69H132.414V201.448Z" fill="white" />
-        <path d="M210.206 143.103H177.793V298.69H210.206V143.103Z" fill="white" />
-        <path d="M288 88H255.586V298.69H288V88Z" fill="white" />
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="200" r="200" fill="#404FD5" />
+        <path
+          fill="#fff"
+          d="M84.6 268v-22.6h18V154h-18v-22.6h70.2c8.3 0 15.6 1.4 21.7 4.3a32 32 0 0 1 19.7 30.2v2a30 30 0 0 1-3.6 15.4c-2.3 3.9-5 7-8.3 9.1a36 36 0 0 1-9 4.5v3.5c2.9.8 6 2.3 9.4 4.5 3.3 2 6.2 5.2 8.5 9.2 2.5 4 3.7 9.3 3.7 15.8v2a35 35 0 0 1-5.2 19.4 34 34 0 0 1-14.7 12.3 50.1 50.1 0 0 1-21.4 4.3h-71Zm43.7-23.4h24.2c5.6 0 10-1.4 13.4-4a14 14 0 0 0 5.3-11.8v-2c0-5-1.7-9-5-11.6-3.5-2.8-8-4.1-13.7-4.1h-24.2v33.5Zm0-57h23.8a20 20 0 0 0 13-4c3.6-2.8 5.3-6.5 5.3-11.3v-2c0-5-1.7-8.7-5-11.3a20.9 20.9 0 0 0-13.3-4.1h-23.8v32.8ZM242 268l-34.7-136.5h26.5l28.9 120h2.7l28.9-120h26.5L286.1 268h-44Z"
+        />
       </svg>
       <h2>adriaan.company</h2>
       <p>Placeholder domain for Adriaan's company.</p>
